@@ -1,0 +1,112 @@
+#box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 170px;
+
+}
+
+.head,.octopusme_head,.omont_head{
+    display: flex;
+    flex-direction: row;
+    line-height: 50px;
+    font-size: 13px;
+}
+.infromation{
+    margin-left: 60px;
+    margin-right: 350px;
+}
+.price,.number,.amount_money,.operation{
+    margin-right: 100px;
+}
+img{
+    width: 70px;
+    height: auto;
+}
+.octopusme_body,.omont_body{
+    border: 1px solid #cccccc;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 950px;
+    align-items: flex-start;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.ac{
+    display: block;
+    width: 200px;
+    font-size: 13px;
+    text-decoration: none;
+}
+a:link a:visited{
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+#oc_price,#om_price{
+    background-color: snow;
+    padding: 3px 2px;
+    margin-left: 210px;
+    font-size: 13px;
+}
+.oc_number,.om_number{
+    margin-left: 30px;
+    margin-top: 0px;
+}
+#decrease1,#increase1,#decrease2,#increase2{
+    height: 26px;
+}
+#integer1,#integer2{
+    text-align: center;
+    width: 40px;
+    height: 20px;
+    background-color: white;
+}
+#oc_amount_money,#om_amount_money{
+    color: orange;
+    margin-left: 70px;
+    font-size: 13px;
+}
+.delete{
+    margin-left: 65px;
+    font-size: 13px;
+}
+.foot{
+    display: flex;
+    margin-top: 20px;
+    width: 980px;
+    height: 50px;
+    background-color: antiquewhite ;
+    line-height: 50px;
+}
+.allselect,.cut,.share,.remove,.selected,#total{
+    font-size: 13px;
+}
+.cut,.share,.remove{
+    margin-left: 20px;
+    color: dimgray;
+}
+.selected{
+    margin-left: 260px;
+    color: dimgray;
+}
+#total{
+    margin-left: 40px;
+    color: dimgray;
+}
+span{
+    color: darkorange;
+    font-size: 22px;
+}
+#balance{
+    background-color: #cccccc;
+    width: 110px;
+    margin-left: 43px;
+    text-align: center;
+    font-size: 22px;
+    color: white;
+}

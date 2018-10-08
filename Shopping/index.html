@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的购物车</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script rel="stylesheet" type="text/javascript" src="app.js"></script>
+</head>
+<body>
+    <div id = "box">
+        <div class="main">
+            <div class="head">
+                <div class="allselect">
+                        <input type="checkbox" class="check_all" onclick="selectAll(1,0)">全选
+                </div>
+                <div class="infromation">商品信息</div>
+                <div class="price">单价</div>
+                <div class="number">数量</div>
+                <div class="amount_money">金额</div>
+                <div class="operation">操作</div>
+            </div>
+            <div id="body">
+                <div id = "octopusme">
+                    <div class="octopusme_head">
+                        <div class="cart_checkbox">
+                            <input type="checkbox" name="check" id="oc_selectAll" onclick="selectSame1('oc_selectAll','oc_selectSingle');selectSingle()">
+                        </div>
+                        <div class="shop_name">店铺：<a target="_blank" href="https://kooksy.taobao.com/shop/view_shop.htm?spm=a1z0d.6639537.1997196601.1.57f774841hgFqY&user_number_id=135760583">octopusme章鱼家</a></div>
+                    </div>
+                    <div class="octopusme_body">
+                        <div class="cart_checkbox" >
+                            <input type="checkbox" cc name="check"  class="oc_selectSingle" onclick="selectSame2('oc_selectAll','oc_selectSingle');selectSingle()">
+                        </div>
+                        <div>
+                            <img src="https://img.alicdn.com/bao/uploaded/i4/135760583/TB2UsnuaVyZBuNjt_jJXXbDlXXa_!!135760583.jpg_80x80.jpg">
+                        </div>
+                        <div>
+                            <a class="ac" target="_blank" href="https://item.taobao.com/item.htm?spm=a1z0d.6639537.1997196601.5.57f77484VQFMBz&id=570807925462">octopusme丘比特宽松透气束脚休闲裤女秋宽松九分裤运动收腿长裤</a>
+                        </div>
+                        <div id="oc_price">¥132.00</div>
+                        <div class="oc_number">
+                            <input type="button" value="-" id="decrease1" onclick="oc_dec(),oc_amount()" ><input type="text" value="1" disabled="disabled" id="integer1" name="amount"><input type="button" value="+" id="increase1" onclick="oc_add(),oc_amount()">
+                        </div>
+                        <div id="oc_amount_money"><b>¥132.00</b></div>
+                        <div class="delete" onclick="removeRow('octopusme')"><a>删除</a></div>
+
+                    </div>
+                </div>
+                <div id = "omont">
+                    <div class="omont_head">
+                        <div class="cart_checkbox">
+                            <input type="checkbox" name="check" id="om_selectAll" onclick="selectSame1('om_selectAll','om_selectSingle');selectSingle()">
+                        </div>
+                        <div class="shop_name">店铺：<a target="_blank" href="https://omont.tmall.com/shop/view_shop.htm?spm=a1z0d.6639537.1997196601.14.57f77484zhcxan&user_number_id=2075892917">omont服饰旗舰店</a></div>
+                    </div>
+                    <div class="omont_body">
+                        <div class="cart_checkbox" >
+                            <input type="checkbox"  cc name="check"  class="om_selectSingle" onclick="selectSame2('om_selectAll','om_selectSingle');selectSingle()">
+                        </div>
+                        <div>
+                            <img src="https://img.alicdn.com/bao/uploaded/TB1T8eWtr1YBuNjSszeL6SblFXa_80x80.jpg">
+                        </div>
+                        <div>
+                            <a class="ac" target="_blank" href="https://detail.tmall.com/item.htm?spm=a1z0d.6639537.1997196601.17.57f77484zhcxan&id=569214819495">omont蛋挞家 宽松百搭显瘦高腰牛仔短裤女休闲阔腿裤夏2018新款</a>
+                        </div>
+                        <div id="om_price" >¥116.00</div>
+                        <div class="om_number">
+                            <input type="button" value="-" id="decrease2" onclick="om_dec(),om_amount()"><input type="text" value="1" id="integer2" disabled="disabled"><input type="button" value="+" id="increase2" onclick="om_add(),om_amount()">
+                        </div>
+                        <div id="om_amount_money"><b>¥116.00</b></div>
+                        <div class="delete" onclick="removeRow('omont')"><a>删除</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foot">
+            <div class="allselect">
+                <input type="checkbox" class="check_all" onclick="selectAll(0,1)"> 全选
+            </div>
+            <div class="cut" onclick="removeRow('body')"><a>删除</a></div>
+            <div class="remove">移入收藏夹</div>
+            <div class="share">分享</div>
+            <div class="selected">已选商品<span bb>0</span>件</div>
+            <div id="total">合计（不含运费）：<span aa>¥0.00</span></div>
+            <div id="balance">结 算</div>
+        </div>
+    </div>
+
+</body>
+</html>
