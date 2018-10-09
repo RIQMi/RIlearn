@@ -1,1 +1,0 @@
-Great progress in the day.
